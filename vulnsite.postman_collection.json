@@ -1,0 +1,489 @@
+{
+	"info": {
+		"_postman_id": "832f93ad-7950-4cbe-94ae-f3a4cf3727c0",
+		"name": "vulnsite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "获取管理员列表",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MSwiVXNlcm5hbWUiOiJhZG1pbiIsIk5hbWUiOiJhZG1pbiIsIkdyYWRlIjoxLCJleHAiOjE2Mzg2NTk5ODIsImlzcyI6InJwc2F0ZSIsIm5iZiI6MTYzODYyMzkyMn0.Sbuudhnd6PMLFRfS1Fuq7HZL-KsoOUwchuAag5sFypo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8099/v1/Admin",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"v1",
+								"Admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "添加管理员",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MSwiVXNlcm5hbWUiOiJhZHZhbmNlciIsIk5hbWUiOiJhZHZhbmNlciIsIkdyYWRlIjoxLCJleHAiOjE2Mzg2NjAzMTgsImlzcyI6InJwc2F0ZSIsIm5iZiI6MTYzODYyNDI1OH0._0nyBIPpYw9J7NnZc9x7alSR2H4SAtiZLF1QdToVXlQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"aaa\",\r\n    \"password\": \"aaa\",\r\n    \"name\": \"张三\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8099/v1/Admin",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"v1",
+								"Admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "修改管理员信息",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MSwiVXNlcm5hbWUiOiJhZHZhbmNlciIsIk5hbWUiOiJhZHZhbmNlciIsIkdyYWRlIjoxLCJleHAiOjE2Mzg2NjI2OTAsImlzcyI6InJwc2F0ZSIsIm5iZiI6MTYzODYyNjYzMH0.D5lkeRQ1LBHMThZR6Gk7CNI4Fbpu0JJ2odobkfk3rHA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8099/v1/Admin",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"v1",
+								"Admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除管理员信息",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MSwiVXNlcm5hbWUiOiJhZHZhbmNlciIsIk5hbWUiOiJhZHZhbmNlciIsIkdyYWRlIjoxLCJleHAiOjE2Mzg2NjI2OTAsImlzcyI6InJwc2F0ZSIsIm5iZiI6MTYzODYyNjYzMH0.D5lkeRQ1LBHMThZR6Gk7CNI4Fbpu0JJ2odobkfk3rHA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8099/v1/Admin/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"v1",
+								"Admin",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MyAdmin",
+			"item": [
+				{
+					"name": "修改我的用户信息",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6OSwiVXNlcm5hbWUiOiJhYWEiLCJOYW1lIjoi5byg5LiJIiwiR3JhZGUiOjIsImV4cCI6MTYzODY2MzYzNywiaXNzIjoicnBzYXRlIiwibmJmIjoxNjM4NjI3NTc3fQ.mqwCclaggfYOUolfYeIeaCqe3snDMVOuBBmBDwTyiVA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"aaa\",\r\n    \"name\": \"aaaa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8099/v1/Admin/My",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"v1",
+								"Admin",
+								"My"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询我的用户信息",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6OSwiVXNlcm5hbWUiOiJhYWEiLCJOYW1lIjoiYWFhYSIsIkdyYWRlIjoxLCJleHAiOjE2Mzg2NjczMjUsImlzcyI6InJwc2F0ZSIsIm5iZiI6MTYzODYzMTI2NX0._TrHdRAYlT1pvRhm2azBJldPy3-PDNSnnqNhFk5IRNQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"username\":\"\",\r\n    \"password\": \"admin\",\r\n    \"grade\": \"1\",\r\n    \"name\": \"zhang\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8099/v1/Admin/My",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"v1",
+								"Admin",
+								"My"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Machine",
+			"item": [
+				{
+					"name": "查询靶机",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8099/v1/Machine/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"v1",
+								"Machine",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询靶机+难度",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MSwiVXNlcm5hbWUiOiJhZG1pbiIsIk5hbWUiOiJ6aGFuZyIsIkdyYWRlIjoyLCJleHAiOjE2Mzg2NDM0NTgsImlzcyI6InJwc2F0ZSIsIm5iZiI6MTYzODYwNzM5OH0.I98J6ZYgWMHf-KQ7aihYp5G4Oz_-iet1nUKvUe8Po-o",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8099/v1/Machine/1/10/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"v1",
+								"Machine",
+								"1",
+								"10",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "搜索靶机",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8099/v1/Machine/search/1/10/d",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"v1",
+								"Machine",
+								"search",
+								"1",
+								"10",
+								"d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ManagerMachine",
+			"item": [
+				{
+					"name": "添加靶机",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6OSwiVXNlcm5hbWUiOiJhYWEiLCJOYW1lIjoiYWFhYSIsIkdyYWRlIjoxLCJleHAiOjE2Mzg2NjU5ODUsImlzcyI6InJwc2F0ZSIsIm5iZiI6MTYzODYyOTkyNX0.GiYUhxnK3-R9q8JbfTlBgx6xWSK9KpmFHtDH3sUrRfM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Title\": \"test\",\r\n    \"Desc\": \"this is desc\",\r\n    \"DownAddr\": \"download address\",\r\n    \"DownPwd\": \"download password\",\r\n    \"Difficulty\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8099/v1/Machine",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"v1",
+								"Machine"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除靶机",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6OSwiVXNlcm5hbWUiOiJhYWEiLCJOYW1lIjoiYWFhYSIsIkdyYWRlIjoxLCJleHAiOjE2Mzg2NjU5ODUsImlzcyI6InJwc2F0ZSIsIm5iZiI6MTYzODYyOTkyNX0.GiYUhxnK3-R9q8JbfTlBgx6xWSK9KpmFHtDH3sUrRfM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8099/v1/Machine/11",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"v1",
+								"Machine",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "修改靶机",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6OSwiVXNlcm5hbWUiOiJhYWEiLCJOYW1lIjoiYWFhYSIsIkdyYWRlIjoxLCJleHAiOjE2Mzg2NjU5ODUsImlzcyI6InJwc2F0ZSIsIm5iZiI6MTYzODYyOTkyNX0.GiYUhxnK3-R9q8JbfTlBgx6xWSK9KpmFHtDH3sUrRfM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ID\": 2,\r\n    \"Title\": \"hello\",\r\n    \"Desc\": \"hello\",\r\n    \"DownAddr\": \"hello\",\r\n    \"DownPwd\": \"hello\",\r\n    \"Difficulty\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8099/v1/Machine",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"v1",
+								"Machine"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "登陆",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "localhost.com",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8099/v1/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"v1",
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
